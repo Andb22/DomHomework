@@ -26,17 +26,21 @@ const createAnimalListItem = function(form) {
     const animalListItem = document.createElement('li');
     //animalListItem.animalList.add('.animal-list');
 
-    const name = document.createElement('h2');
+    const name = document.createElement('li');
     name.textContent = form.name.value;
     animalListItem.appendChild(name);
 
-    const species = document.createElement('h2');
+    const species = document.createElement('li');
     species.textContent = form.species.value;
     animalListItem.appendChild(species);
 
-    const location = document.createElement('h3');
+    const location = document.createElement('li');
     location.textContent = form.location.value;
     animalListItem.appendChild(location);
+
+    const scarcity = document.createElement('li');
+    scarcity.textContent = form.scarcity.value;
+    animalListItem.appendChild(scarcity);
 
     return animalListItem;
 };

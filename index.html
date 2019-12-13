@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel='stylesheet' type='text/css' href="css/styles.css"></link>
   <script src="js/app.js"></script>
-  <link rel='stylesheet' src="css/styles.css"></link>
   <title>Scottish Animals list</title>
 </head>
 <body>
@@ -22,8 +23,14 @@
   <label for="location" class="primary">Location</label>
   <input type="text" id="location" placeholder='Mountains' required/>
 
-  <label for="scarcity" class="secondary">Scarcity</label>
-  <input type="radio" id="scarcity" value="Scarcity" checked/>
+  <input type="radio" id="scarcity" name="scarcity" value="Widespread" required checked/>
+  <label for="widespread" class="secondary">Widespread</label>
+
+  <input type="radio" id="scarcity" name="scarcity" value="Rare"/>
+  <label for="rare" class="secondary">Rare</label>
+
+  <input type="radio" id="scarcity" name="scarcity" value="Endangered"/>
+  <label for="endangered" class="secondary">Endangered</label>
 
   <!-- <label for="habitat" class="secondary">habitat</label>
   <input type="image" id="habitat" src="./images/sea.jpg" required/> -->

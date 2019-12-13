@@ -1,4 +1,26 @@
+body {
+  background-color: purple;
+  list-style-type: none;
+}
+
 #habitat{
   width: 10px;
   height: 10px;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+
+#new-item-form {
+  list-style-type: none;
+  border-style: 10px;
+  border-color: black;
+}
+
+ul.animal-list {
+  list-style-type: none;
+
 }
