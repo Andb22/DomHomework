@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js/app.js"></script>
+  <link rel='stylesheet' src="css/styles.css"></link>
+  <title>Scottish Animals list</title>
+</head>
+<body>
+
+<h1>Scottish Animals</h1>
+<!-- create a form in html with inputs for relevant data -->
+<form id="new-item-form">
+  <label for="name" class="primary">Animal Name</label>
+  <input type="text" id="name" placeholder='Golden Eagle' required/>
+
+  <label for="species" class="primary">Species</label>
+  <input type="text" id="species" placeholder='Bird' required/>
+
+  <label for="location" class="primary">Location</label>
+  <input type="text" id="location" placeholder='Mountains' required/>
+
+  <label for="scarcity" class="secondary">Scarcity</label>
+  <input type="radio" id="scarcity" value="Scarcity" checked/>
+
+  <!-- <label for="habitat" class="secondary">habitat</label>
+  <input type="image" id="habitat" src="./images/sea.jpg" required/> -->
+
+  <input type="submit" value="Save Animal">
+</form>
+
+<h2>Animal List</h2>
+<ul class = 'animal-list'>
+  <!-- <li><input type='input' value='task' > Task</input></li>
+  <li><input type='submit' value='completion' >Date of completion</input></li>
+  <li><input type='submit' value='person' >Who is responsible</input></li> -->
+</ul>
+
+<button id="deleteList">Delete List</button>
+
+
+</body>
+</html>
