@@ -13,40 +13,54 @@
 
 <h1>Scottish Animals</h1>
 <!-- create a form in html with inputs for relevant data -->
-<form id="new-item-form">
-  <label for="name" class="primary">Animal Name</label>
-  <input type="text" id="name" placeholder='Golden Eagle' required/>
+<form class="new-item-form">
+  <label for="name" class="primary">Animal Name: </label>
+  <input type="text" id="name" placeholder='Puffin' required/>
 
-  <label for="species" class="primary">Species</label>
+  <label for="species" class="primary">Species: </label>
   <input type="text" id="species" placeholder='Bird' required/>
 
-  <label for="location" class="primary">Location</label>
-  <input type="text" id="location" placeholder='Mountains' required/>
-
-  <input type="radio" id="scarcity" name="scarcity" value="Widespread" required checked/>
+  <label for="location" class="primary">Location: </label>
+  <input type="text" id="location" placeholder='Western Isles' required/>
+  <br/>
+  <br/>
+  <h4>Scarcity</h4>
   <label for="widespread" class="secondary">Widespread</label>
+  <input type="radio" id="scarcity" name="scarcity" required checked/>
 
-  <input type="radio" id="scarcity" name="scarcity" value="Rare"/>
   <label for="rare" class="secondary">Rare</label>
+  <input type="radio" id="scarcity" name="scarcity" />
 
-  <input type="radio" id="scarcity" name="scarcity" value="Endangered"/>
   <label for="endangered" class="secondary">Endangered</label>
+  <input type="radio" id="scarcity" name="scarcity" value="Endangered"/>
+  <br/>
+  <br/>
+  <h4>Habitat</h4>
 
-  <!-- <label for="habitat" class="secondary">habitat</label>
-  <input type="image" id="habitat" src="./images/sea.jpg" required/> -->
+  <label for="habitat" class="secondary">Sea - <img src="./images/sea.jpg" class="radioImage"></label>
+  <input type="radio" id="habitat"  name="habitat" value="image1" required/>
 
-  <input type="submit" value="Save Animal">
+  <label for="habitat" class="secondary">Mountain - <img src="./images/mountain.jpg" class="radioImage"></label>
+  <input type="radio" id="habitat"  name="habitat" value="image2" />
+
+  <label for="habitat" class="secondary">Forest - <img src="./images/forest.jpg" class="radioImage"></label>
+  <input type="radio" id="habitat"  name="habitat" value ="image3"/>
+
+  <br/>
+  <input type="submit" value="Add Animal">
 </form>
 
 <h2>Animal List</h2>
 <ul class = 'animal-list'>
-  <!-- <li><input type='input' value='task' > Task</input></li>
-  <li><input type='submit' value='completion' >Date of completion</input></li>
-  <li><input type='submit' value='person' >Who is responsible</input></li> -->
 </ul>
 
 <button id="deleteList">Delete List</button>
 
+<div class ="hide">
+<img src="images/sea.jpg" id="image1" class="radioImage"/>
+<img src="images/mountain.jpg" id="image2" class="radioImage"/>
+<img src="images/forest.jpg" id="image3" class="radioImage"/>
+</div>
 
 </body>
 </html>

@@ -4,11 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
     console.dir('');
 
 
-  const newItemForm = document.querySelector('#new-item-form');
+  const newItemForm = document.querySelector('.new-item-form');
   newItemForm.addEventListener('submit', handleNewItemFormSubmission);
 
   const deleteButton = document.querySelector('#deleteList');
   deleteButton.addEventListener('click', handleDeleteAllClick);
+
 });
 
 
@@ -19,12 +20,12 @@ event.preventDefault();
     const animalList = document.querySelector('.animal-list');
     animalList.appendChild(animalListItem);
 
+
     event.target.reset();
 };
 
 const createAnimalListItem = function(form) {
     const animalListItem = document.createElement('li');
-    //animalListItem.animalList.add('.animal-list');
 
     const name = document.createElement('li');
     name.textContent = form.name.value;
@@ -41,6 +42,10 @@ const createAnimalListItem = function(form) {
     const scarcity = document.createElement('li');
     scarcity.textContent = form.scarcity.value;
     animalListItem.appendChild(scarcity);
+
+    const habitat = document.createElement('li');
+    habitat.innerHTML = document.getElementById(form.habitat.value);
+    animalListItem.appendChild(habitat);
 
     return animalListItem;
 };

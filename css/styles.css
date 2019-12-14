@@ -1,5 +1,5 @@
 body {
-  background-color: purple;
+  background-color: #4464AD;
   list-style-type: none;
 }
 
@@ -8,19 +8,67 @@ body {
   height: 10px;
 }
 
+h1 {
+  background-image: url("../images/ScottishCastleImage.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  height: 25%;
+}
 
 li {
   list-style-type: none;
+  border-style: groove;
+  border-style: 5px;
+  border-color: black;
 }
 
-
-#new-item-form {
+.new-item-form {
   list-style-type: none;
+  padding: 10px;
+  background-color: white;
+  opacity: 0.7;
+  border-style: groove;
   border-style: 10px;
   border-color: black;
 }
 
+
+
+.new-item-form #habitat input[type=radio] {
+  display: none;
+}
+
+.new-item-form #habitat input[type=radio] + label {
+  background: url("./images/sea.jpg");
+}
+
 ul.animal-list {
   list-style-type: none;
+  background-color: white;
+  opacity: 0.6;
+  border-style: groove;
+  border-style: 10px;
+  border-color: black;
+}
 
+.radioImage {
+  height: 5%;
+  width: 5%;
+}
+
+h4 {
+  text-decoration: underline;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  height: 20%;
 }
